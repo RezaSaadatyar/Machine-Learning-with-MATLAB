@@ -1,6 +1,16 @@
 # Machine Learning with MATLAB
 
-This repository contains a MATLAB-based Machine Learning Software (MLS) designed for biomedical signal processing. The software provides a graphical user interface (GUI) for processing and analyzing signals such as electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG). The MLS includes tools for filter design, feature extraction, dimensionality reduction, and machine learning algorithms.
+This repository contains a MATLAB-based Machine Learning Software (MLS) that is specifically designed for advanced biomedical signal processing applications. The software provides an intuitive graphical user interface (GUI) that facilitates users in efficiently processing and analyzing various complex biological signals. These include, but are not limited to, electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG). 
+
+The MLS is equipped with a comprehensive set of tools that cater to different aspects of biomedical signal processing. One of the key features is filter design, which allows users to create and apply various types of filters to clean and preprocess the signals, ensuring the removal of noise and artifacts that could skew results.
+
+In addition to filter design, the software offers capabilities for feature extraction, enabling users to identify and extract significant characteristics from the signals that are crucial for further analysis. This process is vital in preparing the data for subsequent steps, such as classification or pattern recognition.
+
+The MLS also includes dimensionality reduction techniques that help simplify the data without losing essential information. This is particularly important in the context of high-dimensional data, as it enhances the efficiency of machine learning algorithms and makes visualization more manageable.
+
+Speaking of machine learning algorithms, the software integrates a variety of them, providing users with the flexibility to apply different techniques to classify and interpret the biomedical signals. Users can select and implement algorithms tailored to their specific research needs, facilitating the investigation of relationships within the data.
+
+Overall, this MATLAB-based Machine Learning Software is a robust solution for researchers and practitioners in the field of biomedical signal processing, offering a comprehensive suite of tools designed for effective signal analysis and machine learning applications.
 
 **Related Article**:  
 [A muscle synergies-based movements detection approach for recognition of the wrist movements](https://link.springer.com/article/10.1186/s13634-020-00699-y)
