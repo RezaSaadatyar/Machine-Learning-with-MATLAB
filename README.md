@@ -2,13 +2,15 @@
 
 This repository contains a MATLAB-based Machine Learning Software (MLS) designed for biomedical signal processing. The software provides a graphical user interface (GUI) for processing and analyzing signals such as electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG). The MLS includes tools for filter design, feature extraction, dimensionality reduction, and machine learning algorithms.
 
+The software described in the repository appears to be a comprehensive tool for biomedical signal processing, which could be highly relevant to the study described in the article "[A muscle synergies-based movements detection approach for recognition of the wrist movements](https://link.springer.com/article/10.1186/s13634-020-00699-y)".
+
 ## Demo
 
-
+https://github.com/RezaSaadatyar/Machine-Learning-with-MATLAB/blob/main/Image/Demo.gif
 
 ## Features
 
-- **Data Preprocessing**: Import data from various formats (e.g., `.mat`, `.txt`, `.xlsx`), perform channel selection, and apply denoising and filtering techniques.
+- **Data Preprocessing**: Import data from various formats (e.g., `.mat`, `.txt`, `.xlsx`), select channels, and apply denoising and filtering techniques.
 - **Feature Extraction**: Extract features in both time and frequency domains using methods like Mean Absolute Value (MAV), Root Mean Square (RMS), and Wavelet transforms.
 - **Feature Selection**: Utilize algorithms such as Principal Component Analysis (PCA), Fisher's Discriminate Analysis (FDA), and Mutual Information for optimal feature selection.
 - **Classification & Clustering**: Apply supervised (e.g., SVM, KNN, MLP) machine learning algorithms.
