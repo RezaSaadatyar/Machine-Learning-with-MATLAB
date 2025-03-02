@@ -8,7 +8,7 @@ In addition to filter design, the software offers capabilities for feature extra
 
 The MLS also includes dimensionality reduction techniques that help simplify the data without losing essential information. This is particularly important in the context of high-dimensional data, as it enhances the efficiency of machine learning algorithms and makes visualization more manageable.
 
-Speaking of machine learning algorithms, the software integrates a variety of them, providing users with the flexibility to apply different techniques to classify and interpret the biomedical signals. Users can select and implement algorithms tailored to their specific research needs, facilitating the investigation of relationships within the data.
+The software uses diverse machine learning algorithms, allowing users to customize techniques for classifying and analyzing biomedical signals, tailored to their research needs.
 
 Overall, this MATLAB-based Machine Learning Software is a robust solution for researchers and practitioners in the field of biomedical signal processing, offering a comprehensive suite of tools designed for effective signal analysis and machine learning applications.
 
