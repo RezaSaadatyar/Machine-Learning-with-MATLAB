@@ -1,7 +1,13 @@
+%% =============================================================================================
+% ================================= Machine Learning Software ==================================
+% ================================ Presented by: Reza Saadatyar ================================
+% ======================================= 2018-2019 ============================================
+
 function machine_learning_software
 clc; clear; close all;
 S.fig=figure('NumberTitle','off','Name','','MenuBar','none','ToolBar','none','Resize','off',...
 'Color',0.94*[1 1 1],'Units','normalized','Position',[0.02 0.011 0.97 0.95]);
+
 %% ======================================= Introduction ========================================
 tg = uitabgroup;
 tab1=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="k"><b> Software Outline </font></html>');
@@ -27,6 +33,7 @@ if exist('Image\ListStep.jpg','file')~=0;a=axes('Parent',S.start,'unit','norm','
 uistack(a,'bottom');X=imread('Image\ListStep.jpg');imagesc(X);a.Color=0.94*[1 1 1];a.XColor=0.94*[1 1 1];
 a.YColor=0.94*[1 1 1];a.XTick=[];a.YTick=[];
 end
+
 %% ========================================== Load Data ========================================
 tab1=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="red"><b> Load & Filtering</font></html>');
 S.t1=uicontrol('parent',tab1,'style','text','string','Step 1','unit',...
@@ -88,6 +95,7 @@ S.t1=uicontrol('parent',S.L2,'style','text','string','Chj:','unit','norm',...
 S.Chj=uicontrol('parent',S.L2,'style','edit','string','','unit','norm','enable','off',...
 'Position',[0.83 0.3 0.15 0.52],'Fontweight','bold','FontSize',11,'FontName',...
 'Times New Roman','HorizontalAlignment','left','Tooltip','Chi<Chj<=Num(All Ch)');
+
 %% ====================================== Filtering ============================================
 S.t1=uicontrol('parent',tab1,'style','text','string','Step 2 (Optional)','unit',...
 'norm','Position',[0.385 0.96 0.37 0.036],'Fontweight','bold','FontSize',16,'FontName',...
@@ -182,6 +190,7 @@ S.ax(13)=uipanel('Parent',tab1,'Title','Spectrogram',...
 S.savfilt=uicontrol('parent',S.ax(1),'style','check','string','Save Filtered Signal Results',...
 'unit','norm','Position',[0.841 0.945 0.157 0.06],'Fontweight','bold','FontSize',11,...
 'FontName','Times New Roman');
+
 %% ================================== Feature Extraction =======================================
 tab1=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="blue"><b> Feature Extraction & Wavelet</font></html>');
 S.t1=uicontrol('parent',tab1,'style','text','string','Step 3 (Optional)','unit',...
@@ -255,6 +264,7 @@ S.ax(2)=uipanel('Parent',tab1,'Title','Figure Feature Extraction','unit','norm',
 S.savfea=uicontrol('parent',S.ax(2),'style','checkbox','string','Save Feature Extraction Results',...
 'unit','norm','Position',[0.7 0.945 0.3 0.06],'Fontweight','bold','FontSize',11,...
 'FontName','Times New Roman');
+
 %% ======================================== Wavelet ============================================
 S.t1=uicontrol('parent',tab1,'style','text','string','Step 4 (Optional)','unit','norm','Position',...
 [0.005 0.37 0.39 0.036],'Fontweight','bold','FontSize',16,'FontName','Times New Roman',...
@@ -318,6 +328,7 @@ S.savwav=uicontrol('parent',S.ax(4),'style','checkbox','string','Save De-noise R
 'Position',[0.78 0.945 0.22 0.06],'Fontweight','bold','FontSize',11,'FontName','Times New Roman');
 S.savwavAD=uicontrol('parent',S.ax(3),'style','checkbox','string','Save Coefficients','unit','norm',...
 'Position',[0.82 0.945 0.17 0.06],'Fontweight','bold','FontSize',11,'FontName','Times New Roman');
+
 %% ================================= Classifiation & Clustring =================================
 tab1=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="green"><b> Classification & Clustring </font></html>');
 S.t1=uicontrol('parent',tab1,'style','text','string','Step 5','unit','norm',...
@@ -699,6 +710,7 @@ S.ax(11)=uipanel('Parent',tab7,'unit','norm','outerposition',[0 0 1 1],'ShadowCo
 tab8 = uitab(tabgp,'Title','<html><font name="Times New Roman" size=4.5 color="k"><b>Acc & Sen & Spe & Pre & FM & MCC</font></html>');
 S.ax(12)=uipanel('Parent',tab8,'unit','norm','outerposition',[0 0 1 1],'ShadowColor',...
 'k','Fontweight','bold','FontSize',12,'FontName','Times New Roman','BorderWidth',2);
+
 %% ======================================= uicontextmenu =======================================
 cm=uicontextmenu;uimenu('parent',cm,'label','Save','callback',@Save);
 uimenu('parent',cm,'label','New Figure','callback',@NewFigure);
@@ -738,15 +750,18 @@ uimenu('parent',CCCCC,'label','0.5','callback',@Linewidth);uimenu('parent',CCCCC
 uimenu('parent',CCCCC,'label','1.5','callback',@Linewidth);uimenu('parent',CCCCC,'label','2','callback',@Linewidth);
 uimenu('parent',CCCCC,'label','2.5','callback',@Linewidth);uimenu('parent',CCCCC,'label','3','callback',@Linewidth);
 uimenu('parent',CCCCC,'label','3.5','callback',@Linewidth);uimenu('parent',CCCCC,'label','4','callback',@Linewidth);
+
 %% =============================================================================================
 tab9=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="blue"><b>Help</font></html>');
 help(tab9)
 tab10=uitab('parent',tg,'Title','<html><font name="Times New Roman" size=5 color="k"><b>Contact</font></html>');
 contact(tab10)
+
 %% =========================================== Variables =======================================
 Data=0;FF=0;str=0;values=0;Inputch=0;Input=0;DataFilter=0;fs=0;FVal=[];Fstr=[];SW=[];SS=[];
 InputWRecons=0;InputWApprox_Detial=[];Input_classification=0;TPerf=[];FTPerf=[];Perfomance=0;KFold=0;
 PerfomanceTotal=[];TPerfT=[];Labels=0;Inpuf=0;PerfomanceT=[];PerfomanceTotalT=[];TPe=[];FTP=[];TPer=[];
+
 %% ================================= Setting callbacks =========================================
 set(S.load,'callback',{@Load_Callback,S});set(S.text1,'callback',{@Text1_Callback,S});
 set(S.radio1,'callback',{@Radio1_Callback,S});set(S.inp,'callback',{@Inp_Callback,S});
@@ -799,6 +814,7 @@ set(S.TFun,'callback',{@TFUn_Callback,S});set(S.Numhl,'callback',{@NUmhl_Callbac
 set(S.NNhmlp,'callback',{@NNHmlp_Callback,S});set(S.NNhmlp1,'callback',{@NNHmlp1_Callback,S});
 set(S.NNhmlp2,'callback',{@NNHmlp2_Callback,S});set(S.epocmlp,'callback',{@Epocmlp_Callback,S});
 set(S.maxfmlp,'callback',{@Maxfmlp_Callback,S});
+
 %% ========================================= Step 1 ============================================
 function Load_Callback(~,~,handles)
 [str,FF,Data,values] = load_data(handles.Lals,handles.inp,handles.text1,list);end
@@ -811,12 +827,14 @@ function Inp_Callback(~, ~, handles)
 function Input_Callback(~,~,handles)
 [Input, FVal, Fstr, SW, SS] = select_channels(Inputch,handles.Chi,handles.Chj,handles.input,handles.inp,...
 handles.display,handles.inputf,handles.list2,handles.inputw,handles.inputCC);end
+
 %% ======================================== Step 2 =============================================
 function Design_Callback(~, ~, handles)
 [DataFilter,fs,FVal,Fstr,SW,SS] = data_filtered(Data,Input,handles.fs,handles.fl,handles.fh,handles.rp,...
 handles.rs,handles.order,handles.design,handles.response,handles.window,handles.input,...
 handles.Chi,handles.Chj,S.ax(1),cm,CM,cmm,handles.display,handles.Fnotch,handles.notch,...
 handles.inputf,handles.list2,handles.inputw,handles.inputCC,S.ax(13));end
+
 %% ========================================= Step 3 ============================================
 function InputFea_Callback(~,~,handles)
 [Inpuf,typTDom,Lwin,SlidWSize] = feature_extraction(Data,DataFilter,Input,S.ax(2),...
@@ -829,11 +847,13 @@ set(handles.save,'value',0);set(handles.list2,'string',Fstr);end;end;end
 function List2_Callback(~, ~, handles)
 [FVal,Fstr,SW,SS] = save_delete_feature(Data,FVal,Fstr,SW,SS,Input,handles.inputf,handles.list2,...
 handles.Chi,handles.Chj,handles.input,handles.delete,S.ax(2),cm,CM,cmm);end
+
 %% =========================================== Step 4 ==========================================
 function NWavelet_Callback(~, ~, handles)
 [InputWApprox_Detial,InputWRecons] = wavelet(Data,handles.nlevel,handles.Nwavelet,handles.softhard,handles.THR,...
 handles.Plotwavelet,handles.input,handles.Chi,handles.Chj,S.ax(3),S.ax(4),cm,CM,...
 cmm,FVal,handles.inputw,DataFilter,Input,handles.inputCC);end
+
 %% ========================================== Step 5 ===========================================
 function InputCC_Callback(~, ~, handles)
 Input_classification = input_classification_clustering(Input,DataFilter,FVal,InputWRecons,...
@@ -864,6 +884,7 @@ end
 T='Training';Performance(TPe,TPer,FTP,S.ax(7),S.ax(8),cm,T)
 T='Test';Performance(TPerf,TPerfT,FTPerf,S.ax(11),S.ax(12),cm,T)
 end;end
+
 %% ======================================== Save Figure ========================================
 function Save(~,~,~)
 axes1=gca;h=get(axes1,'position');fig_new=figure('unit','norm','pos',h,'Visible','off');
@@ -871,6 +892,7 @@ axes_new=copyobj(axes1,fig_new);set(axes_new,'unit','norm','outerposition',[.03 
 fn=uiputfile({'*.jpg';'*.tif';'*.png';'*.gif';'*.fig'});
 if fn~=0;saveas(axes_new,fn);msgbox('Operation Completed');end;close(fig_new)
 end
+
 %% ====================================== save Results =========================================
 function Savfilt_Callback(~,~,handles)
 if get(handles.savfilt,'value')==1
@@ -895,17 +917,20 @@ if fn~=0;if ind==1;save(fn,'Output');elseif ind==2;save(fn,'Output','-ascii');en
 msgbox('Operation Completed');
 end
 end
+
 %% ------------------------------------------- YLabel ------------------------------------------
     function ylab(~,~,~)
         t=(get(gcbo,'label'));ax=gca;if strcmp(t,'mu'); ylabel('\mu v');elseif ...
         strcmp(t,'Enter Name');ylabel(inputdlg('Enter Name'));else;ax.YLabel.String=t;end
         ax.FontName='Times New Roman';if~isempty(ax.Legend);ax.Legend.FontSize=8;end
     end
+
 %% --------------------------------------- NewFigure -------------------------------------------
  function NewFigure(~,~,~)
 axes1=gco;fig_new=figure('unit','norm','pos',[0.1 0.45 0.7 0.35]);
 axes_new=copyobj(axes1,fig_new);set(axes_new,'unit','norm','outerposition',[.03 .03 .95 .95])
-end
+ end
+
 %% -------------------------------- Subplot&xlab&FontSize --------------------------------------
    function Subplot(~,~,~)
        if  Data==0;msgbox('Please Load Data','Error Load Data','error');return;end
@@ -922,6 +947,7 @@ end
     function Marker(~,~,~);set(gco,'Marker',get(gcbo,'label'));end 
     function MarkerSize(~,~,~);set(gco,'MarkerSize',str2double(get(gcbo,'label')));end 
     function Linewidth(~,~,~);set(gco,'Linewidth',str2double(get(gcbo,'label')));end
+
     %% =================================== Callback ============================================
     function Radio_Callback(~, ~, handles);Inp_Callback(handles.inp,nan,handles);end
     function FNotch_Callback(~, ~, handles);Design_Callback(handles.design,nan,handles);end 
@@ -1003,5 +1029,4 @@ end
     function Savfea_Callback(~, ~, handles);Savfilt_Callback(handles.savfilt,nan,handles);end
     function Savwav_Callback(~, ~, handles);Savfilt_Callback(handles.savfilt,nan,handles);end
     function SavwavAD_Callback(~, ~, handles);Savfilt_Callback(handles.savfilt,nan,handles);end
-
 end
