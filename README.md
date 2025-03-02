@@ -32,6 +32,23 @@ https://github.com/user-attachments/assets/f7e55365-ed98-4a4d-804a-cbe9011b3210
 2. **Step 3 & 4**: Extract features in time and frequency domains and select optimal features.
 3. **Step 5**: Apply supervised machine learning techniques and assess their performance through different metrics.
 
+## Data Preparation
+
+### Data Formats
+The software supports the following data formats for classification:
+1. **MAT Files (`.mat`)**:
+   - You can merge inputs (data) and labels (targets) into a single `.mat` file.
+   - Example: Save your data as `data_inputs_labels.mat`, where:
+     - `inputs` contains the feature data (e.g., a matrix of size `[samples x features]`).
+     - `labels` contains the corresponding labels (e.g., a vector of size `[samples x 1]`).
+
+2. **Text Files (`.txt`)** or **Excel Files (`.xlsx`)**:
+   - Ensure that the inputs and labels are clearly separated into specific columns or channels.
+   - You must know which columns or channels correspond to the inputs and which correspond to the labels.
+   - Example for `.txt` or `.xlsx`:
+     - Column 1 to N: Input features (e.g., signal data).
+     - Column N+1: Labels (e.g., class labels).
+
 ## Abbreviations
 
 - **Filtering**: Sampling frequency (Fs), lower cutoff frequency (Flow), higher cutoff frequency (Fhigh), Passband ripple (Rp), Stopband attenuation (Rs).
