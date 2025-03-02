@@ -3,7 +3,7 @@
 This repository contains a MATLAB-based Machine Learning Software (MLS) designed for biomedical signal processing. The software provides a graphical user interface (GUI) for processing and analyzing signals such as electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG). The MLS includes tools for filter design, feature extraction, dimensionality reduction, and machine learning algorithms.
 
 **Related Article**:  
-[A muscle synergies-based movements detection approach for recognition of the wrist movements]([https://link.springer.com/article/10.1186/s13634-020-00699-y](https://link.springer.com/article/10.1186/s13634-020-00699-y))  
+[A muscle synergies-based movements detection approach for recognition of the wrist movements](https://link.springer.com/article/10.1186/s13634-020-00699-y)
 
 ## Demo
 
