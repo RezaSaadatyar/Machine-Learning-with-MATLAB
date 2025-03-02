@@ -5,8 +5,6 @@ This repository contains a MATLAB-based Machine Learning Software (MLS) designed
 **Related Article**:  
 [A muscle synergies-based movements detection approach for recognition of the wrist movements](https://link.springer.com/article/10.1186/s13634-020-00699-y)
 
-## Demo
-
 ![Image](https://github.com/user-attachments/assets/d28e8e58-4e6c-49bf-9925-ae377c2413a0)
 
 ## Features
