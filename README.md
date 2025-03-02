@@ -16,7 +16,7 @@ Overall, this MATLAB-based Machine Learning Software is a robust solution for re
 [A muscle synergies-based movements detection approach for recognition of the wrist movements](https://link.springer.com/article/10.1186/s13634-020-00699-y)
 
 ## Demo
-![Demo.mp4](https://github.com/RezaSaadatyar/Machine-Learning-with-MATLAB/tree/main/Demo)
+https://github.com/user-attachments/assets/f7e55365-ed98-4a4d-804a-cbe9011b3210
 
 ## Features
 
