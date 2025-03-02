@@ -16,7 +16,7 @@ Input = 0; FVal = []; Fstr = ''; SW = []; SS = [];
 set(inputf, 'value', 1); set(inputw, 'value', 1); set(inputCC, 'value', 1);
 set(list2, 'value', 1);
 if length(list2.String) > 1
-    set(list2, 'string', 'Selection');
+    set(list2, 'string', 'Select:');
 end
 
 % Check if the user has selected an input in the GUI

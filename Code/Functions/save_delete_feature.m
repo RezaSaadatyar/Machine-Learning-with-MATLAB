@@ -22,7 +22,7 @@ if get(inputf, 'value') == 1
 end
 
 % Check if the feature list is empty
-if strcmp(get(list2, 'string'), 'Selection')
+if strcmp(get(list2, 'string'), 'Select:')
     % Display a warning if no feature is saved
     msgbox('Please Save Feature', 'Warning', 'warn'); return;
 end
@@ -45,7 +45,7 @@ if delval == 1
 
     % Update the feature list in the GUI
     if size(FVal, 2) == 0
-        set(list2, 'string', 'Selection');
+        set(list2, 'string', 'Select:');
     else
         set(list2, 'value', 1); set(list2, 'string', Fstr); Slist = get(list2, 'string'); typlist = Slist(Valist);
     end
