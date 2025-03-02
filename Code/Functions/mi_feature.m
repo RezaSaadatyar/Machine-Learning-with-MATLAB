@@ -1,15 +1,51 @@
-function MI = mi_feature(TrainInputs,TrainTargets,nbins)
-N= size(TrainInputs,2);MI=zeros(1,size(TrainInputs,1));
-hy=hist(TrainTargets,nbins);py=hy/N ;
-for i=1:size(TrainInputs,1)
-    %%  step 1: calculate histogram of x & y, hx,hy, px,py
-    hx= hist(TrainInputs(i,:),nbins);px=hx/N ;
-    %% step 3: calculate bivariate histogram of x & y, hxy
-    X=[TrainInputs(i,:)',TrainTargets'];hxy=hist3(X,[nbins,nbins]);
-    %% step 4: calculate jonit pdf of x & y, pxy
-    pxy_joint= hxy/N;pxy_indep= px'*py;
-    tp= pxy_joint.* log2(pxy_joint./pxy_indep );
-%     MI(i)=nansum(tp(:));%     index= isnan(tp)==0;MI(i)=sum(tp(index));
-    I=isnan(tp);tp(I)=[];I=isinf(tp);tp(I)=[];MI(i)=sum(tp(:));
-end
+%% =============================================================================================
+% ================================= Machine Learning Software ==================================
+% ================================ Presented by: Reza Saadatyar ================================
+% ======================================= 2018-2019 ============================================
+
+% Function to compute Mutual Information (MI) between features and target labels
+function MI = mi_feature(TrainInputs, TrainTargets, nbins)
+    % Inputs:
+    %   TrainInputs: Input data matrix (features x samples).
+    %   TrainTargets: Target labels for each sample.
+    %   nbins: Number of bins for histogram computation.
+    % Output:
+    %   MI: Mutual Information for each feature.
+
+    % Step 1: Get the number of samples
+    N = size(TrainInputs, 2); % Number of samples
+
+    % Step 2: Initialize the Mutual Information array
+    MI = zeros(1, size(TrainInputs, 1)); % Mutual Information for each feature
+
+    % Step 3: Compute the histogram and probability distribution of the target labels
+    hy = hist(TrainTargets, nbins); % Histogram of target labels
+    py = hy / N; % Probability distribution of target labels
+
+    % Step 4: Loop through each feature
+    for i = 1:size(TrainInputs, 1)
+        %% Step 5: Calculate the histogram and probability distribution of the current feature
+        hx = hist(TrainInputs(i, :), nbins); % Histogram of the current feature
+        px = hx / N; % Probability distribution of the current feature
+
+        %% Step 6: Calculate the bivariate histogram of the current feature and target labels
+        X = [TrainInputs(i, :)', TrainTargets']; % Combine feature and target labels
+        hxy = hist3(X, [nbins, nbins]); % Bivariate histogram
+
+        %% Step 7: Calculate the joint and independent probability distributions
+        pxy_joint = hxy / N; % Joint probability distribution
+        pxy_indep = px' * py; % Independent probability distribution
+
+        %% Step 8: Compute Mutual Information
+        tp = pxy_joint .* log2(pxy_joint ./ pxy_indep); % Mutual Information term
+
+        % Handle NaN and Inf values in the Mutual Information term
+        I = isnan(tp); % Find NaN values
+        tp(I) = []; % Remove NaN values
+        I = isinf(tp); % Find Inf values
+        tp(I) = []; % Remove Inf values
+
+        % Sum the Mutual Information term to get the final MI value for the current feature
+        MI(i) = sum(tp(:));
+    end
 end
