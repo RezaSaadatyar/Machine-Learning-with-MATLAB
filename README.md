@@ -51,10 +51,10 @@ The software supports the following data formats for classification:
 
 ## Abbreviations
 
-- **Filtering**: Sampling frequency (Fs), lower cutoff frequency (Flow), higher cutoff frequency (Fhigh), Passband ripple (Rp), Stopband attenuation (Rs).
+- **Filtering**: Sampling frequency (Fs), Lower cutoff frequency (Flow), Higher cutoff frequency (Fhigh), Passband ripple (Rp), Stopband attenuation (Rs).
 - **Feature Extraction**: Mean Absolute Value (MAV), Root Mean Square (RMS), Waveform length (WL), etc.
 - **Feature Selection**: PCA, FDA, Mutual Information, etc.
-- **Classification & Clustering**: SVM, KNN, MLP, K-means, etc.
+- **Classification: SVM, KNN, MLP, etc.
 - **Performance**: Accuracy, Sensitivity, Specificity, F-score, etc.
 
 ## Usage
