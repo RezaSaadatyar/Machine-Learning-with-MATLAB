@@ -23,7 +23,7 @@ https://github.com/user-attachments/assets/f7e55365-ed98-4a4d-804a-cbe9011b3210
 - **Data Preprocessing**: Import data from various formats (e.g., `.mat`, `.txt`, `.xlsx`), select channels, and apply denoising and filtering techniques.
 - **Feature Extraction**: Extract features in both time and frequency domains using methods like Mean Absolute Value (MAV), Root Mean Square (RMS), and Wavelet transforms.
 - **Feature Selection**: Utilize algorithms such as Principal Component Analysis (PCA), Fisher's Discriminate Analysis (FDA), and Mutual Information for optimal feature selection.
-- **Classification & Clustering**: Apply supervised (e.g., SVM, KNN, MLP) machine learning algorithms.
+- **Classification**: Apply supervised (e.g., SVM, KNN, MLP) machine learning algorithms.
 - **Performance Evaluation**: Assess model performance using metrics like Accuracy, Sensitivity, Specificity, and F-score.
 
 ## Software Outline
