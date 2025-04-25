@@ -22,9 +22,16 @@ https://github.com/user-attachments/assets/f7e55365-ed98-4a4d-804a-cbe9011b3210
 
 - **Data Preprocessing**: Import data from various formats (e.g., `.mat`, `.txt`, `.xlsx`), select channels, and apply denoising and filtering techniques.
 - **Feature Extraction**: Extract features in both time and frequency domains using methods like Mean Absolute Value (MAV), Root Mean Square (RMS), and Wavelet transforms.
-- **Feature Selection**: Utilize algorithms such as Principal Component Analysis (PCA), Fisher's Discriminate Analysis (FDA), and Mutual Information for optimal feature selection.
+- **Feature Selection**: Utilize algorithms such as Principal Component Analysis (PCA), Fisher's Discriminant Analysis (FDA), and Mutual Information for optimal feature selection.
 - **Classification**: Apply supervised (e.g., SVM, KNN, MLP) machine learning algorithms.
 - **Performance Evaluation**: Assess model performance using metrics like Accuracy, Sensitivity, Specificity, and F-score.
+
+## What did you Learned
+- The importance of data preprocessing in ensuring the quality and relevance of the data used for analysis.
+- Various methods of feature extraction and how they can provide insights into the underlying patterns of the data.
+- The significance of feature selection techniques in improving model performance and reducing computational complexity.
+- The application of different classification algorithms and their suitability for various types of data and problems.
+- The critical role of performance evaluation metrics in assessing the effectiveness of machine learning models.
 
 ## Software Outline
 
