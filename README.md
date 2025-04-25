@@ -1,6 +1,6 @@
 # Machine Learning with MATLAB
 
-This repository contains a MATLAB-based Machine Learning Software (MLS) that is specifically designed for advanced biomedical signal processing applications. The software provides an intuitive graphical user interface (GUI) that facilitates users in efficiently processing and analyzing various complex biological signals. These include, but are not limited to, electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG). 
+This repository contains a MATLAB-based Machine Learning Software (MLS) that is specifically designed for advanced biomedical signal processing applications. The software provides an intuitive graphical user interface (GUI) that facilitates users in efficiently processing and analyzing various complex biological signals. These include, but are not limited to, electroencephalography (EEG), electrocardiography (ECG), and electromyography (EMG).
 
 The MLS is equipped with a comprehensive set of tools that cater to different aspects of biomedical signal processing. One of the key features is filter design, which allows users to create and apply various types of filters to clean and preprocess the signals, ensuring the removal of noise and artifacts that could skew results.
 
