@@ -26,7 +26,7 @@ https://github.com/user-attachments/assets/f7e55365-ed98-4a4d-804a-cbe9011b3210
 - **Classification**: Apply supervised (e.g., SVM, KNN, MLP) machine learning algorithms.
 - **Performance Evaluation**: Assess model performance using metrics like Accuracy, Sensitivity, Specificity, and F-score.
 
-## What did you Learned
+## What do you Learn
 - The importance of data preprocessing in ensuring the quality and relevance of the data used for analysis.
 - Various methods of feature extraction and how they can provide insights into the underlying patterns of the data.
 - The significance of feature selection techniques in improving model performance and reducing computational complexity.
